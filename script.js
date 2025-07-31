@@ -30,3 +30,10 @@ function getValidStatus(taskNumber) {
 
   return status; // this returns the valid status entered by the user.
 }
+
+// These two lines collect input for Task 1 and Task 2, storing them in separate variables.
+let task1 = getTaskData(1);
+let task2 = getTaskData(2);
+
+// Store tasks in an array for easy handling
+let tasks = [task1, task2];
