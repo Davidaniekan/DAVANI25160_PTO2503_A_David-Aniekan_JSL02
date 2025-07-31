@@ -37,3 +37,16 @@ let task2 = getTaskData(2);
 
 // Store tasks in an array for easy handling
 let tasks = [task1, task2];
+
+// Filter and display completed (done) tasks
+let completedTasks = tasks.filter((task) => task.status === "done");
+
+// This calls a function once for every item in the completedTasks array
+if (completedTasks.length > 0) {
+  for (let i = 0; i < completedTasks.length; i++) {
+    let task = completedTasks[i];
+    console.log(`Title: ${task.title}, Status: ${task.status}`);
+  }
+} else {
+  console.log("No tasks completed, let's get to work!"); // If no tasks are completed, the motivational message is shown.
+}
